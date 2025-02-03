@@ -1,0 +1,6 @@
+DATE = "17:21:14 October 15, 2024"
+QUARTUS_VERSION = "16.0.0"
+
+# Revisions
+
+PROJECT_REVISION = "8_bit_counter"
