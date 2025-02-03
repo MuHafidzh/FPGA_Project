@@ -1,0 +1,69 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity pekate is
+    Port ( 
+        -- Clock inputs
+        ADC_CLK_10 : in STD_LOGIC;
+        MAX10_CLK1_50 : in STD_LOGIC;
+        MAX10_CLK2_50 : in STD_LOGIC;
+
+        -- 7-segment display outputs
+        HEX0 : out STD_LOGIC_VECTOR (7 downto 0);
+
+        -- Key inputs
+        KEY : in STD_LOGIC_VECTOR (1 downto 0);
+
+        -- LED outputs
+        LEDR : out STD_LOGIC_VECTOR (9 downto 0);
+
+        -- Switch inputs
+        SW : in STD_LOGIC_VECTOR (9 downto 0)
+    );
+end pekate;
+
+architecture Behavioral of pekate is
+    signal counter : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    signal clk_divider : STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
+
+    function seg7_decoder(digit : STD_LOGIC_VECTOR(3 downto 0)) return STD_LOGIC_VECTOR is
+    begin
+        case digit is
+            when "0000" => return "11000000"; -- 0
+            when "0001" => return "11111001"; -- 1
+            when "0010" => return "10100100"; -- 2
+            when "0011" => return "10110000"; -- 3
+            when "0100" => return "10011001"; -- 4
+            when "0101" => return "10010010"; -- 5
+            when "0110" => return "10000010"; -- 6
+            when "0111" => return "11111000"; -- 7
+            when "1000" => return "10000000"; -- 8
+            when "1001" => return "10010000"; -- 9
+            when others => return "11111111"; -- All segments off
+        end case;
+    end function;
+
+begin
+    process(MAX10_CLK1_50)
+    begin
+        if rising_edge(MAX10_CLK1_50) then
+            clk_divider <= clk_divider + 1;
+        end if;
+    end process;
+
+    process(clk_divider(25))
+    begin
+        if rising_edge(clk_divider(25)) then
+            if counter = "1001" then
+                counter <= "0000";
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+
+    HEX0 <= seg7_decoder(counter);
+
+end Behavioral;

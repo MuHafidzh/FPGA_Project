@@ -1,0 +1,219 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/simulation/modelsim
+Eclk_divider
+Z1 w1727702955
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/clk_divider.vhd
+Z7 FC:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/clk_divider.vhd
+l0
+L6
+V_?no[`nPgQTPUNWk7NmDV3
+!s100 H4JZ@EF9Dn_BCHBWo8j8>0
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1729254535
+!i10b 1
+Z10 !s108 1729254535.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/clk_divider.vhd|
+Z12 !s107 C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/clk_divider.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 11 clk_divider 0 22 _?no[`nPgQTPUNWk7NmDV3
+l19
+L14
+VDlQ[O0SkH_=hlFKG0ab762
+!s100 `iz0Z71g8h@J[_X[K=d^a3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecounter
+Z15 w1729236982
+R2
+R3
+R4
+R5
+R0
+Z16 8C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/counter.vhd
+Z17 FC:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/counter.vhd
+l0
+L6
+VKOMdJde;^NA`3ETg6cFd92
+!s100 0@2`<2z@z_=cz>SH[cz511
+R8
+31
+Z18 !s110 1729254534
+!i10b 1
+Z19 !s108 1729254534.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/counter.vhd|
+Z21 !s107 C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/counter.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 counter 0 22 KOMdJde;^NA`3ETg6cFd92
+l18
+L16
+VJk@LU[:cia<]29eZ6XmJ32
+!s100 _TXNCJbbPXhCheDh2YMbE0
+R8
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Eeight_bit
+Z22 w1729250096
+R4
+R5
+R0
+Z23 8C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit.vhd
+Z24 FC:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit.vhd
+l0
+L4
+Vb830AbM2M^Ym_BYnfb4hD1
+!s100 ?Vn69=SKbLfITgALfQoBK2
+R8
+31
+R18
+!i10b 1
+R19
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit.vhd|
+Z26 !s107 C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit.vhd|
+!i113 1
+R13
+R14
+Astructural
+R4
+R5
+DEx4 work 9 eight_bit 0 22 b830AbM2M^Ym_BYnfb4hD1
+l59
+L25
+V;c=c3MzfF[07dcQ13dO:82
+!s100 HW[zL@:<R?_Km83fa9>V;3
+R8
+31
+R18
+!i10b 1
+R19
+R25
+R26
+!i113 1
+R13
+R14
+Eeight_bit_tb
+Z27 w1729250715
+R2
+R3
+R4
+R5
+R0
+Z28 8C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit_tb.vhd
+Z29 FC:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit_tb.vhd
+l0
+L6
+VLV15<<1HB1m^00_DaeHah2
+!s100 K2Y3D5>D@SjnzifO5S=z80
+R8
+31
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit_tb.vhd|
+Z31 !s107 C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/eight_bit_tb.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 12 eight_bit_tb 0 22 LV15<<1HB1m^00_DaeHah2
+l35
+L9
+VaD8HOiaTUA[Dcofd5]]O]2
+!s100 n4IjFkAH^agzDCCB=7[z:0
+R8
+31
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Eseven_segment
+Z32 w1729224512
+Z33 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z34 8C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/seven_segment.vhd
+Z35 FC:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/seven_segment.vhd
+l0
+L5
+VBDR]Oz<NOjK<SE1Y;_gmg2
+!s100 _Z;bfN_c@00V=lR<WIM`i2
+R8
+31
+R18
+!i10b 1
+R19
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/seven_segment.vhd|
+Z37 !s107 C:/Users/Habsyi/Documents/ELKA/PKT/Tugas3PKT_Board/seven_segment.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R33
+R4
+R5
+DEx4 work 13 seven_segment 0 22 BDR]Oz<NOjK<SE1Y;_gmg2
+l36
+L14
+VPU0<7oCUCU]QD7U6HX7Dg0
+!s100 [V0WF=[ka;TJI775KcLAM2
+R8
+31
+R18
+!i10b 1
+R19
+R36
+R37
+!i113 1
+R13
+R14
