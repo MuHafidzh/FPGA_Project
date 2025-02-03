@@ -1,0 +1,82 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity test_rot_enc is
+end test_rot_enc;
+
+architecture Behavioral of test_rot_enc is
+    signal clk : STD_LOGIC := '0';
+    signal A : STD_LOGIC := '0';
+    signal B : STD_LOGIC := '0';
+    signal freq_select : STD_LOGIC := '0';
+    signal seg_ratusan : STD_LOGIC_VECTOR (7 downto 0);
+    signal seg_puluhan : STD_LOGIC_VECTOR (7 downto 0);
+    signal seg_satuan : STD_LOGIC_VECTOR (7 downto 0);
+
+    component rot_enc
+        Port (
+            clk : in STD_LOGIC;
+            A : in STD_LOGIC;
+            B : in STD_LOGIC;
+            freq_select : in STD_LOGIC;
+            seg_ratusan : out STD_LOGIC_VECTOR (7 downto 0);
+            seg_puluhan : out STD_LOGIC_VECTOR (7 downto 0);
+            seg_satuan : out STD_LOGIC_VECTOR (7 downto 0)
+        );
+    end component;
+
+begin
+    uut: rot_enc
+        Port map (
+            clk => clk,
+            A => A,
+            B => B,
+            freq_select => freq_select,
+            seg_ratusan => seg_ratusan,
+            seg_puluhan => seg_puluhan,
+            seg_satuan => seg_satuan
+        );
+
+    clk_process : process
+    begin
+        while true loop
+            clk <= '0';
+            wait for 10 ns;
+            clk <= '1';
+            wait for 10 ns;
+        end loop;
+    end process;
+
+    stim_proc: process
+    begin
+        -- Initialize Inputs
+        A <= '0';
+        B <= '0';
+        freq_select <= '0';
+        wait for 100 ns;
+
+        -- Test with freq_select = 0
+        A <= '1';
+        wait for 20 ns;
+        A <= '0';
+        wait for 20 ns;
+        B <= '1';
+        wait for 20 ns;
+        B <= '0';
+        wait for 20 ns;
+
+        -- Test with freq_select = 1
+        freq_select <= '1';
+        wait for 100 ns;
+        A <= '1';
+        wait for 20 ns;
+        A <= '0';
+        wait for 20 ns;
+        B <= '1';
+        wait for 20 ns;
+        B <= '0';
+        wait for 20 ns;
+        wait;
+    end process;
+
+end Behavioral;

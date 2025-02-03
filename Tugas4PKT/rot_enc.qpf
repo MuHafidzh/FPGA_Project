@@ -1,0 +1,6 @@
+DATE = "03:31:34 November 16, 2024"
+QUARTUS_VERSION = "16.0.0"
+
+# Revisions
+
+PROJECT_REVISION = "rot_enc"
