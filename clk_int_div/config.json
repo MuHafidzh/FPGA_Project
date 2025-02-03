@@ -1,0 +1,6 @@
+{
+    "DESIGN_NAME": "clk_int_div",
+    "VERILOG_FILES": ["dir::clk_int_div.sv", "dir::tc_clk.sv"],
+    "CLOCK_PERIOD": 5,
+    "CLOCK_PORT": "clk"
+  }

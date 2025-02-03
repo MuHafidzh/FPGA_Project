@@ -1,0 +1,6 @@
+{
+    "DESIGN_NAME": "freq_psc",
+    "VERILOG_FILES": ["dir::freq_psc.v"],
+    "CLOCK_PERIOD": 5,
+    "CLOCK_PORT": "clk"
+  }

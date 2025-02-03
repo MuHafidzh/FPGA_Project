@@ -1,0 +1,73 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/nakanomiku/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/nakanomiku/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/nakanomiku/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/nakanomiku/DigitalDesign/clk_int_div/runs/RUN_2024-10-31_18-04-53/27-openroad-globalplacement/clk_int_div.odb'…
+Reading design constraints file at '/nix/store/mr1ix0gwjfwmikfqyrq536nwhj83f0zp-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port 'clk' not found.
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 1
+[INFO] Setting input delay to: 1
+[WARNING STA-0366] port 'clk' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0450] virtual clock clk can not be propagated.
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 9 input buffers.
+[INFO RSZ-0028] Inserted 6 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |       122
+       10 |       8 |       0 |             0 |       112
+       20 |      12 |       0 |             0 |       102
+       30 |      21 |       0 |             0 |        92
+       40 |      28 |       0 |             0 |        82
+       50 |      38 |       0 |             0 |        72
+       60 |      48 |       0 |             0 |        62
+       70 |      58 |       0 |             0 |        52
+       80 |      68 |       0 |             0 |        42
+       90 |      73 |       0 |             0 |        32
+      100 |      79 |       0 |             0 |        22
+      110 |      86 |       2 |             1 |        12
+      120 |      90 |       4 |             2 |         2
+    final |      90 |       4 |             2 |         0
+---------------------------------------------------------
+[INFO RSZ-0035] Found 2 fanout violations.
+[INFO RSZ-0038] Inserted 4 buffers in 2 nets.
+[INFO RSZ-0039] Resized 90 instances.
+Placement Analysis
+---------------------------------
+total displacement        270.8 u
+average displacement        1.5 u
+max displacement            7.6 u
+original HPWL            1557.3 u
+legalized HPWL           1799.0 u
+delta HPWL                   16 %
+
+[INFO DPL-0020] Mirrored 38 instances
+[INFO DPL-0021] HPWL before            1799.0 u
+[INFO DPL-0022] HPWL after             1732.1 u
+[INFO DPL-0023] HPWL delta               -3.7 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                36     135.13
+  Tap cell                                 30      37.54
+  Timing Repair Buffer                     19      93.84
+  Inverter                                  7      26.28
+  Sequential cell                          17     435.42
+  Multi-Input combinational cell           74     573.05
+  Total                                   183    1301.25
+Writing OpenROAD database to '/home/nakanomiku/DigitalDesign/clk_int_div/runs/RUN_2024-10-31_18-04-53/31-openroad-repairdesignpostgpl/clk_int_div.odb'…
+Writing netlist to '/home/nakanomiku/DigitalDesign/clk_int_div/runs/RUN_2024-10-31_18-04-53/31-openroad-repairdesignpostgpl/clk_int_div.nl.v'…
+Writing powered netlist to '/home/nakanomiku/DigitalDesign/clk_int_div/runs/RUN_2024-10-31_18-04-53/31-openroad-repairdesignpostgpl/clk_int_div.pnl.v'…
+Writing layout to '/home/nakanomiku/DigitalDesign/clk_int_div/runs/RUN_2024-10-31_18-04-53/31-openroad-repairdesignpostgpl/clk_int_div.def'…
+Writing timing constraints to '/home/nakanomiku/DigitalDesign/clk_int_div/runs/RUN_2024-10-31_18-04-53/31-openroad-repairdesignpostgpl/clk_int_div.sdc'…

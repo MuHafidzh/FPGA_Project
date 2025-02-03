@@ -1,0 +1,42 @@
+56. Printing statistics.
+
+=== clk_int_div ===
+
+   Number of wires:                149
+   Number of wire bits:            166
+   Number of public wires:          28
+   Number of public wire bits:      45
+   Number of ports:                  9
+   Number of port bits:             15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                154
+     $_ANDNOT_                      37
+     $_AND_                          3
+     $_MUX_                         17
+     $_NAND_                         4
+     $_NOR_                         11
+     $_NOT_                         12
+     $_ORNOT_                        3
+     $_OR_                          26
+     $_XNOR_                         4
+     $_XOR_                         20
+     sky130_fd_sc_hd__dfrtp_2       14
+     sky130_fd_sc_hd__dfstp_2        2
+     sky130_fd_sc_hd__dlxtp_1        1
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\clk_int_div': 435.417600
+     of which used for sequential elements: 420.403200 (96.55%)
+

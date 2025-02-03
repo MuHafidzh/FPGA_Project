@@ -1,0 +1,198 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO clk_int_div
+  CLASS BLOCK ;
+  FOREIGN clk_int_div ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 60.760 BY 71.480 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 60.080 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 60.080 ;
+    END
+  END VPWR
+  PIN clk_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 51.040 4.000 51.640 ;
+    END
+  END clk_i
+  PIN clk_o
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 45.170 0.000 45.450 4.000 ;
+    END
+  END clk_o
+  PIN cycl_count_o[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 37.440 60.760 38.040 ;
+    END
+  END cycl_count_o[0]
+  PIN cycl_count_o[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 67.480 39.010 71.480 ;
+    END
+  END cycl_count_o[1]
+  PIN cycl_count_o[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 40.840 60.760 41.440 ;
+    END
+  END cycl_count_o[2]
+  PIN cycl_count_o[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 30.640 60.760 31.240 ;
+    END
+  END cycl_count_o[3]
+  PIN div_i[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END div_i[0]
+  PIN div_i[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 37.440 4.000 38.040 ;
+    END
+  END div_i[1]
+  PIN div_i[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 34.040 4.000 34.640 ;
+    END
+  END div_i[2]
+  PIN div_i[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 30.640 4.000 31.240 ;
+    END
+  END div_i[3]
+  PIN div_ready_o
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.336500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 27.240 60.760 27.840 ;
+    END
+  END div_ready_o
+  PIN div_valid_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 23.840 60.760 24.440 ;
+    END
+  END div_valid_i
+  PIN en_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 20.440 60.760 21.040 ;
+    END
+  END en_i
+  PIN rst_ni
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 56.760 17.040 60.760 17.640 ;
+    END
+  END rst_ni
+  PIN test_mode_en_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 0.000 39.010 4.000 ;
+    END
+  END test_mode_en_i
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 55.390 59.925 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 55.200 59.925 ;
+      LAYER met1 ;
+        RECT 4.210 10.640 55.200 60.080 ;
+      LAYER met2 ;
+        RECT 4.230 67.200 38.450 67.480 ;
+        RECT 39.290 67.200 53.730 67.480 ;
+        RECT 4.230 4.280 53.730 67.200 ;
+        RECT 4.230 4.000 38.450 4.280 ;
+        RECT 39.290 4.000 44.890 4.280 ;
+        RECT 45.730 4.000 53.730 4.280 ;
+      LAYER met3 ;
+        RECT 3.990 52.040 56.760 60.005 ;
+        RECT 4.400 50.640 56.760 52.040 ;
+        RECT 3.990 41.840 56.760 50.640 ;
+        RECT 3.990 40.440 56.360 41.840 ;
+        RECT 3.990 38.440 56.760 40.440 ;
+        RECT 4.400 37.040 56.360 38.440 ;
+        RECT 3.990 35.040 56.760 37.040 ;
+        RECT 4.400 33.640 56.760 35.040 ;
+        RECT 3.990 31.640 56.760 33.640 ;
+        RECT 4.400 30.240 56.360 31.640 ;
+        RECT 3.990 28.240 56.760 30.240 ;
+        RECT 4.400 26.840 56.360 28.240 ;
+        RECT 3.990 24.840 56.760 26.840 ;
+        RECT 3.990 23.440 56.360 24.840 ;
+        RECT 3.990 21.440 56.760 23.440 ;
+        RECT 3.990 20.040 56.360 21.440 ;
+        RECT 3.990 18.040 56.760 20.040 ;
+        RECT 3.990 16.640 56.360 18.040 ;
+        RECT 3.990 10.715 56.760 16.640 ;
+  END
+END clk_int_div
+END LIBRARY
+
